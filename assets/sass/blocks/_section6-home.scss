@@ -1,0 +1,154 @@
+.info{ 
+margin: 100px 0; 
+
+    &__main-container{ 
+        display: flex; 
+        flex-wrap: wrap; 
+&__right{ 
+    width: 65%;   
+    display: flex; 
+    justify-content: flex-start; 
+    flex-direction: column; 
+
+    &__h2{ 
+        h2{
+            margin: 0;
+        }
+        font-family: nozha;
+        display: flex; 
+        justify-content: flex-start; 
+        align-items: flex-start;   
+        flex-direction: column; 
+        
+        font-size: xx-large; 
+        color: #3d5066;
+    }
+     
+    p{ 
+        font-size: medium; 
+        color: #3d5066; 
+        text-align: justify;  
+ } 
+
+
+
+
+    &__ul{   
+       display: flex;
+       justify-content: flex-start; 
+       list-style-type: none; 
+       width: 60%;
+       flex-wrap: wrap; 
+       padding: 0;
+
+        li{ 
+           margin: 4px ; 
+         font-size: medium; 
+         color: #3d5066;
+                }
+    }
+
+ }
+
+.fa-circle-check{ 
+    background-color: #ff6165;  
+    font-size: 12px; 
+    padding: 3px;
+    border-radius: 30px;
+}
+
+&__left{   
+    width: 30%;
+    display: flex;   
+    justify-content: space-evenly; 
+    flex-wrap: wrap;  
+        &__cube{   
+            display: flex; 
+            justify-content: center; 
+            align-items: center ; 
+            flex-direction: column;
+        margin: 5px 0;
+        width: 150px;    
+        height: 150px;
+        border-radius: 30px;
+        background-color: #dae8fb;  
+        transition: .3s; 
+        p{ 
+            font-family: nozha; 
+            font-size: large; 
+            font-weight: bold; 
+            color:$text-color;
+        }
+    }  
+
+    &__cube:hover:not(&__cube-top,&__cube-bottom){ 
+        box-shadow:0px 0px 15px 0px #d3e3ff;  
+        transform: translateY(-5px);
+        transition: .3s;
+    }
+
+    &__cube-top,&__cube-bottom{ 
+        transform: translateY(-40px); 
+        } 
+    
+    &__cube-top:hover,&__cube-bottom:hover {
+        transform:translateY(-45px) ; 
+        box-shadow:0px 0px 15px 0px #d3e3ff; 
+    } 
+
+}
+
+
+
+    }
+
+
+
+
+} 
+
+
+
+   
+
+
+
+
+
+
+
+
+@media(max-width:1211px){ 
+    .info{ 
+        margin: 30px 0; 
+        &__main-container{ 
+            &__right{  
+                &__h2{  
+                    img{ 
+                        width: 50%;
+                    }
+                    h2{ 
+                        font-size: 25px; 
+                        text-align: center;
+                    }
+
+                }
+               width: 100%; 
+               &__ul{ 
+                width: 100%;
+               
+               }
+            } 
+            &__left{ 
+                margin: 30px 0;
+                width: 100%; 
+                
+            }
+        }
+    }
+
+} 
+
+
+
+

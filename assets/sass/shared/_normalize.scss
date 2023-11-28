@@ -1,0 +1,28 @@
+
+body { 
+    margin: 0 auto; 
+    width: 84%; 
+   font-family: "dana";
+    font-size: small;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;  
+  }
+  
+  * {
+    box-sizing: border-box;
+  } 
+@font-face {
+  font-family: "dana";
+  src: url(../../assets/fonts/dana-font/fonts/woff/Dana-Light.woff);
+} 
+
+@font-face {
+  font-family:nozha ;
+  src: url(../../assets/fonts/Digi-Nozha-Regularwww.digifonts.ir1400-02-11/Digi\ Nozha\ Regular.otf);
+}
+ 
+  

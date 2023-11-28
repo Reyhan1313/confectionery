@@ -1,0 +1,152 @@
+.main-footer{  
+    margin: 30px 0; 
+    background-color: #f6f9fe;
+   border-radius: 30px;
+    background-image: url(../images/footer-bg.png);  
+
+
+    &__top{ 
+        width: 90%; 
+        margin: 10px auto;
+        display: flex; 
+        text-align: justify;  
+        align-items: center; 
+
+        img{   
+        margin-left: 15px;
+            width: 200px;
+        }
+    } 
+
+.footer-menu-keeper{ 
+    display: flex; 
+    justify-content: space-evenly;
+   margin: 30px 0;
+}
+&__menu{   
+
+    
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    
+
+    span{ 
+font-family: nozha; 
+color: #3D5066; 
+font-size: x-large;
+    }
+ ul{ 
+   
+    padding-right: 0;  
+    list-style-type: square;  
+   
+    li{  
+       
+      padding: 5px; 
+      transition: .3s; 
+      font-size: medium;
+    } 
+    li:hover{  
+       transition: .3s;
+        color: #ff6165;
+      }
+ } 
+
+    
+}
+
+&__contact{ 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    span{ 
+        font-family: nozha; 
+        color: #3D5066; 
+        font-size: x-large;
+    } 
+
+    &__icon{  
+        margin: 10px;
+        i{ 
+            color:#314051 ;
+            padding: 5px;
+            font-size: large; 
+            cursor: pointer; 
+            transition: .1s;
+        }
+
+        i:hover{ 
+animation: float 1.5s ease-in-out infinite;  
+        } 
+
+        @keyframes float{ 
+            0% { 
+                
+                
+                transform: translatey(0px);
+            }
+            
+            50% { 
+            
+                
+                transform: translatey(-10px);
+            
+            }
+            100% { 
+                
+             
+                transform: translatey(0px);
+            
+            }
+        }
+    }
+
+}
+   
+} 
+
+
+@media(max-width:703px){ 
+
+.main-footer{ 
+    &__top{  
+        padding-top: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+    } 
+
+    .footer-menu-keeper{ 
+        flex-wrap: wrap; 
+    }  
+    &__menu{  
+      
+        span{ 
+            font-size: large;
+        }  
+        ul{
+            li{ 
+                font-size: 10px; 
+            }
+        }
+        
+    }
+    
+   &__contact{ 
+    span{ 
+        font-size: large;
+    } 
+    &__icon{ 
+        i{
+            font-size: medium;
+        }
+    }
+   }
+
+
+    }
+
+
+}

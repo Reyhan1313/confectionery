@@ -1,0 +1,95 @@
+.suggestion{ 
+    margin: 60px 0;   
+    display: flex;  
+    justify-content:center; 
+    align-items: center;
+flex-wrap: wrap;
+&__red-card{  
+width: 270px; 
+height: 350px; 
+border-radius: 30px; 
+background-color: #ff6165; 
+display: flex; 
+justify-content: center; 
+flex-direction: column; 
+align-items: center;
+color: white;
+text-align: center;   
+h2{ 
+font-family: nozha; 
+font-size: xx-large; 
+margin-bottom: 0;
+}
+
+&__btn{ 
+    padding:8px 15px; 
+    color: #ff6165; 
+    background-color: white;  
+    border-radius: 30px;
+    transition: .3s;
+} 
+&__btn:hover{ 
+     
+    color: white; 
+    background-color: #8ab9f0;   
+    transition: .3s;
+
+} 
+}
+
+
+&__car-card{  
+    background-color: #f6f9fe; 
+    border-radius: 30px; 
+    margin:  10px 7px;
+    transition: .3s; 
+    width: 270px;   
+    display: inline-block; 
+    &__detail{ 
+        display: flex; 
+        justify-content: center;
+        align-items: center; 
+        flex-direction: column; 
+        margin: 10px;
+        &__img{ 
+            width: 240px;  
+            height: 180px;
+            border-radius: 30px;
+        } 
+
+        &__btn{ 
+            padding: 7px 70px;
+            text-align: center;  
+            border-radius: 30px; 
+            background-color: #8ab9f0; 
+            color: white; 
+            transition: .3s;
+        } 
+&__btn:hover{ 
+    background-color:#ff6165;  
+    transition: .3s;
+}
+    }
+}
+&__car-card:hover{ 
+    transform: translateY(-10px);
+    transition: .3s;
+}
+
+.card-container{ 
+    width: 70%;
+    overflow-x: auto; 
+    white-space: nowrap; 
+} 
+}   
+::-webkit-scrollbar {
+    width:0px;  
+    height: 10px;
+    background-color:white;
+
+}
+::-webkit-scrollbar-thumb {
+    background: #dae8fb;
+    border-radius: 10px; 
+}
+

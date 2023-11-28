@@ -1,0 +1,178 @@
+
+
+
+
+
+
+.header{ 
+
+   &__navbar{  
+    width: 100%; 
+    margin: $padding-s; 
+    display: flex; 
+    justify-content:space-between; 
+    align-items: center;  
+    font-size: 15px;
+    &__main{ 
+       align-self: center;
+    }
+    form {
+
+        margin: 0 30px;
+          width: 300px;
+          height: 44px;
+        
+          border-radius: 50px;
+        
+          display: flex;
+        
+          flex-direction: row;
+        
+          align-items: center;  
+          background-color: #f6f9fe;
+        
+          ::placeholder {
+        
+            color:#97c2f6;
+        
+          }  
+        
+          input {
+        
+            all: unset;
+          
+            font: 16px system-ui;
+          
+            color: #96bff2;
+          
+            height: 100%;
+          
+            width: 100%;
+          
+            padding: 6px 10px; 
+          
+            font-family: "dana";
+          font-size: small;
+          }
+        
+          button {
+        
+            all: unset;
+          
+            cursor: pointer;
+          
+            width: 44px;
+          
+            height: 44px;
+          
+          }
+          
+          i{ 
+            padding: 10px;
+          }
+        
+        } 
+
+
+    &__item{ 
+
+        padding: 7px 8px; 
+        i{ 
+            margin: 0 5px;
+        }
+    
+}
+
+
+
+
+
+
+
+&__icon-keeper{  
+
+    .icon{ 
+        font-size: small;
+         padding:8px 10px;
+         border-radius: 50%; 
+         background-color:#f6f9fe;
+    }
+} 
+
+    &__logo{ 
+     width: 150px; 
+
+    } 
+   } 
+
+ 
+} 
+
+
+@media (max-width:770px){
+
+    .header{ 
+    &__navbar{ 
+        
+        &__item{ 
+            display: none; 
+       } 
+    } 
+    
+    form{
+        display: none;
+    }
+}
+}
+
+
+
+@media (min-width:770px ) { 
+    .header{ 
+        
+        &__navbar{
+            justify-content: space-between; 
+
+            &__item{
+                padding: 2px;
+            } 
+            &__logo{ 
+                width: 145px;
+            }
+        
+        }
+        .fa-bars{
+            display: none;
+        } 
+        
+        form{
+            display: none;
+           }  
+
+        
+     }
+   }   
+
+   @media(min-width:1190px){
+ 
+
+    .header{ 
+      form{
+        display:flex ; 
+      }  
+}
+} 
+
+
+
+
+
+
+
+
+
+
+
+  
+
+

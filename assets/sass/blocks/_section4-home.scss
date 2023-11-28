@@ -1,0 +1,57 @@
+.new-product{ 
+    &__title{ 
+        text-align: center; 
+        font-family: nozha; 
+        font-size: xx-large; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center;
+        h2{ 
+            margin: 0;
+        }
+    } 
+    &__container-c{ 
+       display: flex; 
+       justify-content: center; 
+       align-items: center;
+       flex-wrap: wrap;
+&__card{ 
+    width: 410px;
+    height: 200px;
+    background-color: #f6f9fe;
+    border-radius: 30px; 
+    margin: 10px 5px; 
+    display: inline-block;
+transition: .3s;
+}  
+&__card:hover{ 
+    box-shadow: 0px 0px 15px 3px #d3e3ff; 
+    transition: .3s;
+}
+} 
+
+&__red-p{  
+    margin: 50px 0;
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column; 
+    align-items: center; 
+    background-color: #ff6165; 
+    border-radius: 30px;  
+    padding: 10px;   
+    background-image: url(../images/red-part.png); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    h2{ 
+        font-family: nozha; 
+        color: #f6f9fe; 
+        font-size: 50px; 
+        margin: 0;
+    }
+}
+} 
+
+
+
+
